@@ -1,4 +1,20 @@
 body{
     direction: rtl;
     text-align: right;
+    
 }
+.allmaindetails{
+
+    text-align:right;
+    background-color:rgb(226, 212, 174) ;
+    font-family: Assistant, sans-serif;
+font-style:normal ;
+font-weight: bolder;
+
+font-size:80px;
+line-height:  80px;
+Color:#ffffff
+
+}
+.imageRecipe{}
+

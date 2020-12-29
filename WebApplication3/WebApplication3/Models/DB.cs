@@ -28,9 +28,9 @@ namespace WebApplication3.Models
 
             recipeList = new List<Recipe>()
             {
-                new Recipe (){codeRecipe=0,nameRecipe="עוגת גבינה",codeCategory=11,timeAtMinute=15,LevelDifficulty=1,addRecipe=DateTime.Now,ingredients="-שוקולד -גבינה -קמח -סוכר -אבקת אפיה",Preparation="-הוראות -הכנה לעוגה",userCode=0,image="https://www.10dakot.co.il/wp-content/uploads/2019/07/DSC_0041-%D7%A2%D7%95%D7%AA%D7%A7-800x532-2-785x522.jpg",isShow=true},
-            new Recipe() { codeRecipe = 0, nameRecipe = "עוגת שוקלד", codeCategory = 22, timeAtMinute = 15, LevelDifficulty = 2, addRecipe = DateTime.Now, ingredients = "שוקולד גבינה קמח סוכר אבקת אפיה", Preparation = "הוראות הכנה לעוגה", userCode = 2, image = "https://www.10dakot.co.il/wp-content/uploads/2019/07/DSC_0041-%D7%A2%D7%95%D7%AA%D7%A7-800x532-2-785x522.jpg", isShow = true },
-            new Recipe() { codeRecipe = 0, nameRecipe = "עוגיות חמאה", codeCategory =33, timeAtMinute = 15, LevelDifficulty = 4, addRecipe = DateTime.Now, ingredients = "שוקולד גבינה קמח סוכר אבקת אפיה", Preparation = "הוראות הכנה לעוגה", userCode = 2, image = "https://www.10dakot.co.il/wp-content/uploads/2019/07/DSC_0041-%D7%A2%D7%95%D7%AA%D7%A7-800x532-2-785x522.jpg", isShow = true },
+                new Recipe (){codeRecipe=0,nameRecipe="עוגת גבינה",codeCategory=11,timeAtMinute=15,LevelDifficulty=1,addRecipe=DateTime.Now,ingredients="-שוקולד -גבינה -קמח -סוכר -אבקת אפיה",Preparation="-הוראות -הכנה לעוגה",userCode=12,image="https://www.10dakot.co.il/wp-content/uploads/2019/07/DSC_0041-%D7%A2%D7%95%D7%AA%D7%A7-800x532-2-785x522.jpg",isShow=true},
+            new Recipe() { codeRecipe = 0, nameRecipe = "עוגת שוקלד", codeCategory = 22, timeAtMinute = 15, LevelDifficulty = 2, addRecipe = DateTime.Now, ingredients = "שוקולד גבינה קמח סוכר אבקת אפיה", Preparation = "הוראות הכנה לעוגה", userCode = 34, image = "https://www.10dakot.co.il/wp-content/uploads/2019/07/DSC_0041-%D7%A2%D7%95%D7%AA%D7%A7-800x532-2-785x522.jpg", isShow = true },
+            new Recipe() { codeRecipe = 0, nameRecipe = "עוגיות חמאה", codeCategory =33, timeAtMinute = 15, LevelDifficulty = 4, addRecipe = DateTime.Now, ingredients = "שוקולד גבינה קמח סוכר אבקת אפיה", Preparation = "הוראות הכנה לעוגה", userCode = 56, image = "https://www.10dakot.co.il/wp-content/uploads/2019/07/DSC_0041-%D7%A2%D7%95%D7%AA%D7%A7-800x532-2-785x522.jpg", isShow = true },
 
         };
 

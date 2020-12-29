@@ -18,6 +18,10 @@ import { FullRecipeComponent } from './full-recipe/full-recipe.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 import { TimePipePipe } from './time-pipe.pipe';
+<<<<<<< HEAD
+=======
+import { EditRecipeComponent } from './edit-recipe/edit-recipe.component';
+>>>>>>> 16d1162dfd5e37e144ad527531abb43a8f5c4ecc
 
 
 const routes: Routes = [
@@ -31,6 +35,8 @@ const routes: Routes = [
 },
 {path:"addrecipe",component:AddRecipeComponent 
 },
+{path:"editrecipe",component:EditRecipeComponent 
+}
 ];
 
 @NgModule({
@@ -42,7 +48,12 @@ const routes: Routes = [
     ListRecipeComponent,
     FullRecipeComponent,
     AddRecipeComponent,
+<<<<<<< HEAD
     TimePipePipe
+=======
+    TimePipePipe,
+    EditRecipeComponent
+>>>>>>> 16d1162dfd5e37e144ad527531abb43a8f5c4ecc
   ],
   imports: [
     BrowserModule,RouterModule.forRoot(routes),HttpClientModule,FormsModule,CommonModule,ReactiveFormsModule, BrowserAnimationsModule

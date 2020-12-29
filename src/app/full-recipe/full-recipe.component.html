@@ -1,4 +1,4 @@
-<body>
+<!-- <body>
     <div>
        שם: {{myFullRecipe.nameRecipe}}
     </div>
@@ -7,7 +7,11 @@
     </div>
     דרגת קושי:<img src="./assets/level.png" width="20px" height="20px" *ngFor="let i of counter()">
     <div>
+<<<<<<< HEAD
         תאריך הוספה:{{myFullRecipe.addRecipe | date}}
+=======
+        {{myFullRecipe.addRecipe|date}}
+>>>>>>> 16d1162dfd5e37e144ad527531abb43a8f5c4ecc
     </div>
     <div *ngFor="let item of myFullRecipe.ingredients.split('-'); let i=index">
         <img src="./assets/kazefet.jpg" width="20px" height="20px">
@@ -18,18 +22,36 @@
         {{item}}
         {{i+1}}
     </div>
-    <div>
-        {{myFullRecipe.userCode}}
-    </div>
-    <div>
-        {{myFullRecipe.image}}
-    </div>
+    <img src="{{myFullRecipe.image}}" width="50%" height="50%">
     <div>{{nameCategoryOfMyFullRecipe}}</div>
-<!-- <div>{{getRecipeByCode()}}</div> -->
     <img src={{getCatortyImg()}}>
-<img src="./assets/edit.png" *ngIf="isTheSameUserAdded()">
-    
+    <img src="./assets/edit.png" *ngIf="isTheSameUserAdded()">
+
+
+</body> -->
+
+<!-- <---- --->
+
+<body>
+    <div class="allmaindetails" style="width: 100%;height: 400px; ">
+        <div class="row" style="height: 100%;">
+            <div class="col-5 mainDetails" style="height: 100%; width: 100%; padding: 5%;" displayed="block">
+                
+                <!-- <div>{{nameCategoryOfMyFullRecipe}}</div> -->
+                {{myFullRecipe.nameRecipe}}
+            </div>
+            <div class="col-7 imageRecipe" style="height: 100%; width: 100%;">
+
+                <img src="{{myFullRecipe.image}}" style="height: 100%; width: 100%; padding: 0%;">
+
+            </div>
+
+        </div>
+
+    </div>
+
+<div> {{test}}באדיבות </div>
 
 </body>
-<!-- <img src="./assets/1.png"> -->
+
 <router-outlet></router-outlet>

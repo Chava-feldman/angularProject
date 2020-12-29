@@ -70,35 +70,36 @@ export class AddRecipeComponent implements OnInit {
       image,
       isShow
     );
+    console.log(this.myNewRecipe.LevelDifficulty);
     this.recipeSer.AddRecipe(this.myNewRecipe).subscribe(p => console.log(p), e => console.log(e));
     this.recipeSer.getsRecipes().subscribe(p => console.log(p), err => console.log(err));
   }
   getIngredients() {
+    this.str = "";
+    this.arringredients.splice(this.arringredients.length - 1);
     this.arringredients.forEach(p => {
       this.str += p + "-";
     });
-    return this.str;
+    return this.str.substring(0, this.str.length - 1);
   }
 
   getPreparation() {
+    this.str = "";
+    this.arrPreparation.splice(this.arrPreparation.length - 1);
     this.arrPreparation.forEach(p => {
       this.str += p + "-";
     });
-    return this.str;
+    return this.str.substring(0, this.str.length - 1);
   }
 
   getLevelDiffulty() {
-    switch (this.arrPreparation.length) {
-      case 1: if (this.arrPreparation.length < 10)
-        return 1;
-        break;
-      case 2: if (this.arrPreparation.length < 20)
+    if (this.arrPreparation.length < 10) 
+      return 1;
+      if (this.arrPreparation.length < 20) 
         return 2;
-        break;
-      default: if (this.arrPreparation.length > 10)
-        return 3;
-        break;
+        if (this.arrPreparation.length > 20)
+          return 3;
+      
     }
-  }
 
-}
+  }
