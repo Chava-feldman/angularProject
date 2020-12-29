@@ -17,6 +17,7 @@ import { ListRecipeComponent } from './list-recipe/list-recipe.component';
 import { FullRecipeComponent } from './full-recipe/full-recipe.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddRecipeComponent } from './add-recipe/add-recipe.component';
+import { TimePipePipe } from './time-pipe.pipe';
 
 
 const routes: Routes = [
@@ -40,7 +41,8 @@ const routes: Routes = [
     DetailsRecipeComponent,
     ListRecipeComponent,
     FullRecipeComponent,
-    AddRecipeComponent
+    AddRecipeComponent,
+    TimePipePipe
   ],
   imports: [
     BrowserModule,RouterModule.forRoot(routes),HttpClientModule,FormsModule,CommonModule,ReactiveFormsModule, BrowserAnimationsModule

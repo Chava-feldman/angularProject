@@ -1,13 +1,13 @@
 <body>
     <div>
-        {{myFullRecipe.nameRecipe}}
+       שם: {{myFullRecipe.nameRecipe}}
     </div>
     <div>
-        {{myFullRecipe.timeAtMinute}}
+       זמן הכנה: {{myFullRecipe.timeAtMinute}}
     </div>
-    <img src="./assets/level.png" width="20px" height="20px" *ngFor="let i of counter()">
+    דרגת קושי:<img src="./assets/level.png" width="20px" height="20px" *ngFor="let i of counter()">
     <div>
-        {{myFullRecipe.addRecipe}}
+        תאריך הוספה:{{myFullRecipe.addRecipe | date}}
     </div>
     <div *ngFor="let item of myFullRecipe.ingredients.split('-'); let i=index">
         <img src="./assets/kazefet.jpg" width="20px" height="20px">

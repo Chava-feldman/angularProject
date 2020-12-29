@@ -23,7 +23,7 @@
     <img src="{{myRecipe.image}}" alt="Avatar" style=" width: 414px; height: 250px;" >
     <div style="display: none;">{{myRecipe.timeAtMinute}}</div> 
     <div class="middle">
-        <div class="text"><b>משך הכנה: {{myRecipe.timeAtMinute}}</b></div>
+        <div class="text"><b>משך הכנה: {{myRecipe.timeAtMinute | timePipe}}</b></div>
         <img class="text"  src="./assets/level.png" width="15px" height="15px" *ngFor="let i of counter()">
     </div>
     </div>
