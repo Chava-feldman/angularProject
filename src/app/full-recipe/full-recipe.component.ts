@@ -19,18 +19,22 @@ export class FullRecipeComponent implements OnInit {
       this.myRecipe = param["myRecipe"]
     })
     this.myFullRecipe = recipeSer.clickedRecipe;
+    console.log(this.myFullRecipe);
 
     this.categorySer.getRecipeByCode(this.myFullRecipe.codeCategory).subscribe(p => this.nameCategoryOfMyFullRecipe = p.name, err => console.log(this.myFullRecipe.codeCategory));
     this.userSer.getAllUser().subscribe(p => {
       p.forEach(t => {
         console.log(t.name);
+        console.log(t.code);
+        console.log(this.myFullRecipe.userCode)
         if (t.code == this.myFullRecipe.userCode) {
           console.log(t.name);
           console.log("אני בתוך האיפ")
           this.test = t.name;
         }
       })
-    })
+      
+    }, err=>console.log("erorrrrrrr"))
 
   }
   myFullRecipe: Recipe;

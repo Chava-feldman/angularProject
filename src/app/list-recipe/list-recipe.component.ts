@@ -15,6 +15,8 @@ export class ListRecipeComponent {
 
   changeClickedRecipe(item:Recipe){
     this.RecipeSer.clickedRecipe=item;
+    console.log(item);
+    console.log(this.RecipeSer.clickedRecipe)
     this.router.navigate(['fullrecipe',item.codeRecipe]);
 
   }
@@ -22,8 +24,8 @@ export class ListRecipeComponent {
  
 
   constructor(public RecipeSer: RecipeServiceService,public router:Router) { 
-    this.RecipeSer.getsRecipes().subscribe(p=> this.arreyRecipes=p,err=> console.log(err));
-
+    this.RecipeSer.getsRecipes().subscribe(p=> {this.arreyRecipes=p; console.log(this.arreyRecipes)},err=> console.log(err));
+    
     
   }
 }

@@ -1,0 +1,55 @@
+<!-- 
+<div  >
+<div>
+    {{myRecipe.nameRecipe}}
+
+</div>
+<div>
+    {{myRecipe.timeAtMinute}}
+
+</div>
+<div>
+    {{myRecipe.LevelDifficulty}}
+
+</div>
+<div>
+    {{myRecipe.image}}
+
+</div>
+</div> -->
+
+<div class="card ">
+    <div class="myImage">
+    <img src="{{myRecipe.image}}" alt="Avatar" style=" width: 414px; height: 250px;" >
+    <div style="display: none;">{{myRecipe.timeAtMinute}}</div> 
+    <div class="middle">
+        <div class="text"><b>משך הכנה: {{myRecipe.timeAtMinute|timePipe}}</b></div>
+        <img class="text"  src="./assets/level.png" width="15px" height="15px" *ngFor="let i of counter()">
+    </div>
+    </div>
+    <div>
+      <h4 class="nameRecipe"><b>{{myRecipe.nameRecipe}}</b></h4>
+    </div>
+  </div> 
+
+
+<!-- <div class="container card myImage"  style=" width: 414px; height: 250px;" >
+  <img  src="{{myRecipe.image}}"  class="image"  style=" width: 414px; height: 250px;" >
+  <div class="middle">
+    <div class="text"> משך הכנה: {{myRecipe.timeAtMinute}}</div>
+    <img class="text"  src="./assets/level.png" width="15px" height="15px" *ngFor="let i of counter()">
+
+  </div>
+  <div>
+    <h4 class="nameRecipe"><b>{{myRecipe.nameRecipe}}</b></h4>
+  </div>
+</div> 
+  -->
+<!-- <router-outlet ></router-outlet> -->
+
+<!-- <div class="container">
+  <img src="{{myRecipe.image}}" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text our_services_desc">Hello World</div>
+  </div>
+</div> -->

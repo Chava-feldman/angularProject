@@ -32,6 +32,18 @@ namespace WebApplication3.Controllers
         Preparation=r.Preparation,userCode=r.userCode,image=r.image,isShow=r.isShow});
       return true;
       }
+    [Route("RecipeByCode")]
+    [HttpGet]
+    public Recipe RecipeByCode(int code)
+    {
+      foreach(var item in DB.recipeList)
+      {
+        if (item.codeRecipe==code)
+          return item;
+        
+      }
+      return null;
+    }
   }
   
 
