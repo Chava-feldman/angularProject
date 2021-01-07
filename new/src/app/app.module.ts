@@ -19,6 +19,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddRecipeComponent } from './add-recipe/add-recipe.component';
 import { TimePipePipe } from './time-pipe.pipe';
 import { EditRecipeComponent } from './edit-recipe/edit-recipe.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 const routes: Routes = [
@@ -48,7 +50,9 @@ const routes: Routes = [
     FullRecipeComponent,
     AddRecipeComponent,
     TimePipePipe,
-    EditRecipeComponent
+    EditRecipeComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,RouterModule.forRoot(routes),HttpClientModule,FormsModule,CommonModule,ReactiveFormsModule, BrowserAnimationsModule

@@ -1,7 +1,7 @@
 <input type="text" [(ngModel)]="myEditRecipe.nameRecipe" #name>
 <br>
-<select>
-    <option  *ngFor="let item of allCategories" value="item.name" #category selected="getCategoryByCode()">
+<select [(ngModel)]="myEditRecipe.codeCategory">
+    <option  *ngFor="let item of allCategories" value="item.value"  #category selected="getCategoryByCode()">
         {{item.name}}
     </option>
 </select>
@@ -13,17 +13,12 @@
 </div>
 <br>
 
-
-<!-- 
-
-
-
-
 <div  *ngFor="let item of arrPreparation; trackBy:trackByFn; let i=index;">
     <input type="text"  [(ngModel)]="arrPreparation[i]" placeholder="הוראות הכנה"  (keydown)="addIndexArrPreparation($event)" (focusout)="checkIfEmptyPreparation($event,i)" >
-    </div>
-    
+</div>
 
+<button (click)="saveEditRecipe()">שמירה</button>
+<!-- 
 <br>
 
 <input type="text" placeholder="הכנס תמונה" #image>
