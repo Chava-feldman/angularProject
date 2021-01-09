@@ -1,0 +1,26 @@
+
+
+<form #myForm="ngForm">
+
+<div>
+    <input type="text" value="name" [(ngModel)]="name" name="n" #nameI="ngModel" required>
+    <div *ngIf="nameI.touched&&!nameI.valid">שדה שם הוא חובה!!</div>
+</div>
+
+<div>
+    <input type="text" [(ngModel)]="mail" name="m" #mailI="ngModel" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+    <div *ngIf="mailI.touched&&mailI.hasError('pattern')">שדה מייל אינו תקין!!</div>
+    <div *ngIf="mailI.touched&&mailI.hasError('required')">שדה מייל הוא חובה!!</div>
+</div>
+
+<div>
+    <input type="text" [(ngModel)]="address" name="a"  >
+</div>
+
+<div>
+    <input type="text" [(ngModel)]="password" name="p" #passwordI="ngModel" required pattern = "[0-9]{4,5}"  minlength="4" >
+    <div *ngIf="passwordI.touched&&passwordI.hasError('required')">שדה סיסמה הוא חובה!!</div>
+    <div *ngIf="passwordI.touched&&passwordI.hasError('pattern')">שדה סיסמה אינו תקין!!</div>
+</div>
+<button (click)="addUser()"  [disabled]="!myForm.valid" >הרשם</button>
+</form>‏
