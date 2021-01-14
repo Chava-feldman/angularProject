@@ -1,7 +1,6 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserSerService } from '../user-ser.service';
-// import {NgForm} from '@angular/forms';
 import { User } from 'src/modals/User';
 import { Subscription } from 'rxjs';
 
@@ -16,7 +15,6 @@ export class RegisterComponent implements OnInit, OnDestroy {
   name: string = "";
   constructor(public userSer: UserSerService, public active: ActivatedRoute, public router: Router) {
     active.params.subscribe(param => {
-      // console.log(param);
       this.name = param["name"];
     }, err => { })
   }
@@ -31,9 +29,6 @@ export class RegisterComponent implements OnInit, OnDestroy {
 
   }
 
-  // sendForm(m) { 
-  //   console.log("finish")
-  // }
 
   changeRoutingToRecipe() {
     this.userSer.flag = true;

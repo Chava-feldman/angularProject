@@ -38,7 +38,6 @@ export class LoginComponent implements OnDestroy {
     })
     if (!this.newFlag1)
       this.changeRoutingToRegister(name);
-    // this.userSer.ifExistName(name).subscribe(p => { if (p == true) { this.checkLoginwithPassword(name, password) } else this.changeRoutingToRegister(name) }, err => { console.log(err); })
   }
 
   checkLoginwithPassword(name: string, password: string) {
@@ -50,7 +49,6 @@ export class LoginComponent implements OnDestroy {
     })
     this.ifInCorrentPassword = true;
 
-    // this.userSer.ifExistNamePassword(name, password).subscribe(p => { if (p == null) { this.ifInCorrentPassword = true; } else { this.changeRoutingToRecipe(); this.userSer.updateCurentUser(p) } }, err => { console.log(err); })
   }
   changeRoutingToRegister(name: string) {
     this.router.navigate(['register', name]);

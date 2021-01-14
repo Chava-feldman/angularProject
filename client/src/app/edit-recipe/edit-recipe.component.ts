@@ -32,7 +32,6 @@ export class EditRecipeComponent implements OnInit {
   str: string = "";
   getIngredients() {
     this.str = "";
-    // this.arringredients.splice(this.arringredients.length - 1);
     this.arringredients.forEach(p => {
       if(p.length>0)
       this.str += p + "-";
@@ -42,7 +41,6 @@ export class EditRecipeComponent implements OnInit {
 
   getPreparation() {
     this.str = "";
-    // this.arrPreparation.splice(this.arrPreparation.length - 1);
     this.arrPreparation.forEach(p => {
       if(p.length>0)
       this.str += p + "-";

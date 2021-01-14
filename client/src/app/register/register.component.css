@@ -56,9 +56,7 @@ body {
   .container {
     background-color: #f2f2f2;
     padding: 5px 20px 15px 20px;
-    /* border: 1px solid lightgrey; */
-    /* border-radius: 3px; */
-  /* box-shadow: 2px 2px #6bb5ba; */
+    
   }
   
   input[type=text], input[type=password] {
@@ -81,7 +79,6 @@ body {
   }
   
   .btn {
-    /* background-color: #6bb5ba; */
     background-color: rgb(172 47 110 / 90%);
     color: white;
     padding: 12px;

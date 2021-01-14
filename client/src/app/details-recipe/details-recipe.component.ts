@@ -8,9 +8,6 @@ import { RecipeServiceService } from '../recipe-service.service';
   templateUrl: './details-recipe.component.html',
   styleUrls: ['./details-recipe.component.css'],
 
-//   template: `
-//   <app-full-recipe [fullMyRecipe]="" (parrentRecipe)="fromChild($event)"></app-full-recipe>
-// `
 
 })
 export class DetailsRecipeComponent implements OnInit {

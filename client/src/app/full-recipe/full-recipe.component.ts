@@ -27,8 +27,7 @@ subscription1:Subscription=null;
       p.forEach(t => {
         console.log(t.name);
         if (t.code == this.myFullRecipe.userCode) {
-          // console.log(t.name);
-          // console.log("אני בתוך האיפ")
+          
           this.test = t.name;
         }
       })
@@ -56,17 +55,6 @@ subscription1:Subscription=null;
     return false;
   }
 
-  // getNameOfuserRecipe() {
-  //   this.userSer.getAllUser().subscribe(p => {
-  //     p.forEach(t => {
-  //       console.log(t)
-  //       if (t.code == this.myFullRecipe.userCode) {
-  //         console.log(t.name);
-  //         this.test = t.name;
-  //       }
-  //     })
-  //   })
-  // }
 
 
   ngOnInit(): void {
